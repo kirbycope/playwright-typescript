@@ -1,3 +1,5 @@
+![Playwright TypeScript](/playwright-typescript.png)
+
 # playwright-typescript
 [Playwright](https://playwright.dev/) is an open-source automation library for browser testing and web scraping developed by Microsoft.
 </br>
