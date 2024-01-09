@@ -1,0 +1,22 @@
+{
+  "name": "playwright-typescript",
+  "version": "1.0.0",
+  "description": "[Playwright](https://playwright.dev/) is an open-source automation library for browser testing and web scraping developed by Microsoft.\r </br>\r [TypeScript](https://www.typescriptlang.org/) extends JavaScript by adding types to the language.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirbycope/playwright-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirbycope/playwright-typescript/issues"
+  },
+  "homepage": "https://github.com/kirbycope/playwright-typescript#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.8"
+  }
+}
