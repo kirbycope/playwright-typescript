@@ -12,7 +12,16 @@
 1. Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 1. Run `npm install`
   
-## Creating the First Test (Historical)
+## Run Tests
+1. In the integrated terminal run `npx playwright test`
+1. In VS Code right-click `playwright-report\index.html` and select "Open with Live Server"
+
+----
+
+<details>
+
+<summary>Creating the First Test (Historical)</summary>
+
 1. Run `npm init playwright@latest` to install the latest version of Playwright
    - Enter `y` if prompted.
 1. Select "TypeScript" when prompted
@@ -21,6 +30,4 @@
 1. Press [Y] to add Playwright browsers
    - This can be done later by running `npx playwright install`
 
-## Run Tests
-1. In the integrated terminal run `npx playwright test`
-1. In VS Code right-click `playwright-report\index.html` and select "Open with Live Server"
+</details>
