@@ -8,7 +8,8 @@
 ## Getting Started
 1. Install [NodeJS](https://nodejs.org/en/) LTS
 1. Open the root folder using [VS Code](https://code.visualstudio.com/)
-   * If you use [GitHub Desktop](https://desktop.github.com/), select the "Open in Visual Studio" button1. Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
+   * If you use [GitHub Desktop](https://desktop.github.com/), select the "Open in Visual Studio" button
+1. Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 1. Run `npm init playwright@latest` to install the latest version of Playwright
    - Enter `y` if prompted.
 1. Select "TypeScript" when prompted
