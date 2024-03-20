@@ -5,6 +5,13 @@
 </br>
 [TypeScript](https://www.typescriptlang.org/) extends JavaScript by adding types to the language.
 
+## Core Concepts
+* [Fluent Interface](https://en.wikipedia.org/wiki/Fluent_interface) is an object-oriented API whose design relies extensively on method chaining.
+  * pageObect.someFunction()
+  * pageOject.someElement().click()
+* [Page Object Model](https://www.selenium.dev/documentation/en/guidelines_and_recommendations/page_object_models/) is a Design Pattern which has become popular in test automation for enhancing test maintenance and reducing code duplication. </br>
+  * The "login" screen will have a "Login page object" that contains the selectors for elements on the page and functions that can be performed on that page.
+
 ## Getting Started
 1. Install [NodeJS](https://nodejs.org/en/) LTS
 1. Open the root folder using [VS Code](https://code.visualstudio.com/)

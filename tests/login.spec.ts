@@ -10,13 +10,13 @@ const scenarios = [
 scenarios.forEach(({ username, password, message }) => {
   test(`login as ${username}`, async ({ page, loginPage }) => {
 
-    // Given I am on the login page
+    // [Arrange] Given I am on the login page
     await loginPage.open();
 
-    // When I login with <username> and <password>
+    // [Act] When I login with <username> and <password>
     await loginPage.login(username, password);
 
-    // Then I should see a message saying <message>
+    // [Assert] Then I should see a message saying <message>
     let alertText = await page.innerText('#flash');
     expect(alertText).toContain(message);
 
