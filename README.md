@@ -11,8 +11,16 @@
    * If you use [GitHub Desktop](https://desktop.github.com/), select the "Open in Visual Studio" button
 1. Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 1. Run `npm install` to install dependencies noted in [package.json](/package.json)
-1. Run `npx playwright install`
-  
+1. Run `npx playwright install` to install browsers
+1. In the root folder create a new file called `.env`
+1. Copy+Paste the following
+   ```
+   TEST_BASE_URL="https://the-internet.herokuapp.com"
+   TEST_USER="tomsmith"
+   TEST_PASS="SuperSecretPassword!"
+   ```
+1. Save
+
 ## Run Tests
 1. In the integrated terminal run `npx playwright test`
 1. In VS Code right-click `playwright-report\index.html` and select "Open with Live Server"
