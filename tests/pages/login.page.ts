@@ -1,5 +1,5 @@
 import type { Page } from '@playwright/test';
-import { baseUrl, testUser, testPass } from '../test-data';
+import { baseUrl, testUser, testPass } from '../../test-data';
 
 /** URL looks like: {baseURL}/login */
 export default class LoginPage{

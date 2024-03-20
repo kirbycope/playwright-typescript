@@ -1,6 +1,6 @@
 // Feature: The Internet Guinea Pig Website
-import { test, expect } from '@playwright/test';
-import LoginPage from '../pages/login.page';
+import { expect } from '@playwright/test';
+import { test } from './fixtures/login.fixture';
 
 // Scenario Outline: As a user, I can log into the secure area
 const scenarios = [
@@ -8,10 +8,7 @@ const scenarios = [
   { username: 'foobar', password: 'barfoo', message: 'Your username is invalid!' },
 ];
 scenarios.forEach(({ username, password, message }) => {
-  test(`login as ${username}`, async ({ page }) => {
-    
-    // [Setup] The page object
-    const loginPage = new LoginPage(page);
+  test(`login as ${username}`, async ({ page, loginPage }) => {
 
     // Given I am on the login page
     await loginPage.open();
