@@ -22,8 +22,22 @@
 1. Save
 
 ## Run Tests
+
+### Local Runs
 1. In the integrated terminal run `npx playwright test`
-1. In VS Code right-click `playwright-report\index.html` and select "Open with Live Server"
+1. To view results run `npx playwright show-report`
+   - Alternatively, in VS Code right-click `playwright-report\index.html` and select "Open with Live Server"
+
+### GitHub Runs
+1. [One-Time Setup] Open the `/settings` page for this repo.
+   1. Select "Secrets and variables" > "Actions"
+   1. Select "New repository secret"
+   1. For "Name" enter `TEST_BASE_URL` and for "Secret" enter `https://the-internet.herokuapp.com`
+   1. Select "New repository secret"
+   1. For "Name" enter `TEST_USER` and for "Secret" enter `tomsmith`
+   1. Select "New repository secret"
+   1. For "Name" enter `TEST_PASS` and for "Secret" enter `SuperSecretPassword!`
+1. When code is commited the GHA will run, see [Actions](https://github.com/kirbycope/playwright-typescript/actions)
 
 ----
 
