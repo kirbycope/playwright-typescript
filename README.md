@@ -24,6 +24,14 @@
 ## Run Tests
 
 ### Local Runs
+
+#### Using VS Code Extension
+1. [One-Time Setup] Install [Playwright Test for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
+1. Select the "Testing" tab
+1. Click "Run Test"
+1. To view results, check the "TEST RESULTS" pane
+
+#### Using VS Code Terminal
 1. In the integrated terminal run `npx playwright test`
 1. To view results run `npx playwright show-report`
    - Alternatively, in VS Code right-click `playwright-report\index.html` and select "Open with Live Server"
@@ -38,19 +46,3 @@
    1. Select "New repository secret"
    1. For "Name" enter `TEST_PASS` and for "Secret" enter `SuperSecretPassword!`
 1. When code is commited the [GHA](/.github/workflows/playwright.yml) will run, see [Actions](https://github.com/kirbycope/playwright-typescript/actions)
-
-----
-
-<details>
-
-<summary>Creating the First Test (Historical)</summary>
-
-1. Run `npm init playwright@latest` to install the latest version of Playwright
-   - Enter `y` if prompted.
-1. Select "TypeScript" when prompted
-1. Press [Enter] to use the default location, "tests"
-1. Press [Y] to add GitHub Actions
-1. Press [Y] to add Playwright browsers
-   - This can be done later by running `npx playwright install`
-
-</details>
