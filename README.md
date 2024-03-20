@@ -37,7 +37,7 @@
    1. For "Name" enter `TEST_USER` and for "Secret" enter `tomsmith`
    1. Select "New repository secret"
    1. For "Name" enter `TEST_PASS` and for "Secret" enter `SuperSecretPassword!`
-1. When code is commited the GHA will run, see [Actions](https://github.com/kirbycope/playwright-typescript/actions)
+1. When code is commited the [GHA](/.github/workflows/playwright.yml) will run, see [Actions](https://github.com/kirbycope/playwright-typescript/actions)
 
 ----
 
