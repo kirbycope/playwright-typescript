@@ -17,6 +17,7 @@
   "homepage": "https://github.com/kirbycope/playwright-typescript#readme",
   "devDependencies": {
     "@playwright/test": "^1.40.1",
-    "@types/node": "^20.10.8"
+    "@types/node": "^20.10.8",
+    "dotenv": "^16.4.5"
   }
 }
