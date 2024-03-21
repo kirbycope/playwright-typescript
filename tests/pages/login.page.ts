@@ -2,7 +2,7 @@ import type { Page } from '@playwright/test';
 import { baseUrl, testUser, testPass } from '../../test-data';
 
 /** URL looks like: {baseURL}/login */
-export default class LoginPage{
+export default class LoginPage {
 
     /** The `Page` object to use. */
     private page: Page;
@@ -17,9 +17,7 @@ export default class LoginPage{
     /** The `button` to submit a form. */
     buttonSubmit = () => this.page.locator('button[type="submit"]');
 
-    /** Opens `this` page.
-     * @param page The Fixture to use
-     */
+    /** Opens `this` page. */
     public async open() {
         await this.page.goto(baseUrl + '/login');
     }
